@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- css stylesheet -->
+    <link href="./CSS.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Shopping Card</title>
+    <!-- icon tab -->
+    <link rel="icon" href="./Js/img/fashion.jpg" type="image/jpg">
+  </head>
+  <body>
+    <main class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./Js/img/Logo.png" alt="Fashion" style="width: 8rem; height: 8rem;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" id="navbar">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" id="navbar">Women</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" id="navbar">Men</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+           <div>
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                  <!-- shoing cart Bag start -->
+                <a href="./shopping.html" class="cart position-relative d-inline-flex navbar-brand" aria-label="View your shopping cart">
+                  <i class="fas fa fa-shopping-cart fa-lg" id="bagSpin"></i>
+                    <span class="cart-basket d-flex align-items-center justify-content-center" id="totalQuantity">
+                         0
+                   </span>
+                </a>
+        <!-- Shoping Bag End -->
+               </li>
+             </ul>
+           </div>
+          </nav>
+        <!-- Navbar End -->
+    
+        <!-- List card Start Here -->
+        <div class="container mt-5">
+            <!-- card star -->
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="row">
+              <!-- Products comes here -->
+          </div>
+        </div>
+        <!-- List card End Here -->
+        <!-- purchase Table start -->
+        <table class="container table mt-5">
+            <thead>
+              <tr>
+                <th scope="col">Product Name</th>
+                <th scope="col">Item</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+              </tr>
+            </thead>
+            <tbody class="align-middle" id="tbody">
+              <!-- cards go here -->
+            </tbody>
+          </table>
+          <div class="d-flex justify-content-end">
+            <p class="fw-bold m-5" id="cart-total-price">Total Price:  $00.00 </p>
+          </div>
+          <div class="d-flex justify-content-center m-5">
+            <button class="btn btn-primary btn-purchase m-5 checkOut" type="button">CHECK OUT</button>
+          </div>
+        </main>
+        <!-- purchase Table End -->
+      
+         <!-- Fotter start -->
+        <footer class="main-footer bg-light">
+            <div class="container main-footer-container mt-5">
+                <h3 class="band-name">Dress Shopping</h3>
+                </div>
+        </footer>
+        <!-- Footer End -->
+       
+    
+    <script src="./Js/product.js"></script>
+    <script src="./Js/card.js"></script>
+    <script src="./Js/index.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
